@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 COPY app.js /usr/src/app/app.js
 
 # 필요한 패키지 설치
-RUN npm install
+RUN npm install ws
 
 # 애플리케이션 실행 명령
 CMD ["node", "app.js"]
