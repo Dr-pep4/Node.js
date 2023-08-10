@@ -5,7 +5,7 @@ FROM node:14
 WORKDIR /usr/src/app
 
 # 애플리케이션 코드 복사
-COPY . .
+COPY app.js /usr/src/app/app.js
 
 # 필요한 패키지 설치
 RUN npm install
